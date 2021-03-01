@@ -1,0 +1,16 @@
+.section {
+    padding: 0 20px;
+}
+.section .gnb-menu .inner{
+    justify-content: space-between; 
+}
+.section .gnb-menu .gnb--left {
+    flex-grow: 0;
+}
+.section .gnb-menu .gnb--left .ico{
+}
+.section .gnb-menu .gnb--left .gnb__list{
+    display: none;
+}
+
+

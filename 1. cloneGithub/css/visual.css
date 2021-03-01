@@ -1,0 +1,78 @@
+/* 
+
+VISUAL  CSS
+
+*/
+
+.section--visual{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover; /* 배경이미지 사이즈를 요소의 전체 영역으로 커버 */
+}
+/* 배경을 어둡게 설정 */
+.section--visual::before{
+    content: "";
+    position: absolute; /* 부모(.section)에 position:relative를 줌. */
+    top: 0;
+    left: 0;
+    /* width: 100%; height: 100% 와 동일한 효과 */
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .3);
+} 
+.section--visual .inner{
+    padding: 160px 0; /* 여백 추가 */
+    display: flex;
+} 
+.section--visual .summary{
+    /* 
+       flex-grow: 0;  기본값
+       flex-basis: auto; 기본값 
+    */
+     /* flex-grow: 1;flex에서 item들중의 작은 크기를 기준으로 비율을 1로 가져감  
+        flex-basis: 0; flex에서 item들이 차지하는 영역의 크기를 초기화
+     */
+    flex: 1; /* flex 단축 */
+    margin-right: 90px;
+}
+.section--visual .summary__title{
+    color: #FFF;
+    font-size: 54px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .25), 
+                 0, 1px 25px rgba(0,0,0,.75); /* 글자에 그림자 생성 */
+  }
+  .section--visual .summary__description{
+    color: #FFF; 
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .25), 
+                 0, 1px 25px rgba(0,0,0,.75); /* 글자에 그림자 생성 */
+  }
+
+#sign-form{
+    width: 340px;
+    margin-top: 16px;
+}
+#sign-form li{
+    margin-bottom: 17px;
+}
+#sign-form li:last-child { /* 마지막 li태그 선택 */ 
+    margin-bottom: 0;
+}
+#sign-form .input--text{
+    width: 100%; /* 부모요소의 너비를 그래도 사용 */ 
+    height: 40px;
+}
+#sign-form .caption{
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, .6); /* 투명도 */
+    line-height: 1.5;
+    text-align: center;
+}
+#sign-form [type="submit"]{
+    width: 100%;
+    height: 62px;
+    padding: 0 25px;
+    font-size: 20px;
+    justify-content: center; /* 수평정렬 */
+}

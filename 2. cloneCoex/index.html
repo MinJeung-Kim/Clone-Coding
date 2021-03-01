@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>코엑스 VISITOR</title>
+     
+        <!-- 작성자 -->
+        <meta name="author" content="minjeung">
+     
+        <!-- 페이지 검색 설명글 -->
+        <meta name="description"
+           content="오늘의 주요 일정2020년 12월. 11FRI; 12SAT; 13SUN; 14MON; 15TUE; 16WED; 17THU. 코엑스전시 무료관람하고 싶다면 ?">
+     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta property="og:type" content="website"> <!-- 사이트 타입 -->
+        <meta property="og:site_name" content="COEX"> <!-- 사이트이름 -->
+        <meta property="og:title" content="코엑스 VISITOR"> <!-- 사이트 제목 -->
+        <!-- 사이트 설명 -->
+        <meta property="og:description"
+           content="오늘의 주요 일정2020년 12월. 11FRI; 12SAT; 13SUN; 14MON; 15TUE; 16WED; 17THU. 코엑스전시 무료관람하고 싶다면 ?">
+        <meta property="og:image" content="img/logo_m_corona.png">
+        <meta property="og:url" content="http://www.coex.co.kr/"> <!-- 실제사이트 주소 -->
+     
+        <!-- CSS 초기화(cdn) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"> 
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- 반응형 css -->
+        <link rel="stylesheet" media="all and (max-width: 960px)" href="css/main_medium.css">
+     
+        <!-- 경량화된 웹 폰트 사용(구글 폰트 => https://fonts.google.com/) -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+     
+        <script defer src="main.js"></script>
+     </head>
+<body>
+   <div class="body__container">
+      <!-- ========== HEADER ========== -->
+      <header class="section">
+         <div class="clearfix">
+               <div class="top_menu visitor">
+                  <a href="#" class="tap_vis">
+                     <img src="img/visitor_ov.png" alt="">
+                     <span title="코엑스 방문객 사이트 바로가기">VISITOR</span>
+                  </a>
+               </div>
+               <div class="top_menu organizer" onmouseover="mover()" onmouseout="mout()">
+                  <a href="#" class="tap_org">
+                     <img id="imageID" src="img/organizer_off.png" alt="">
+                     <span title="코엑스 방문객 사이트 바로가기">ORGANIZER</span>
+                  </a>
+               </div> 
+         </div> 
+         <ul class="top_subMenu inner">
+               <li class="clearfix">
+                  <a href="#">코엑스 소개</a>
+                  <a href="#">코엑스월드</a>
+                  <a href="#">MICE&Coex</a>
+                  <a href="#">Cyber Coex</a>
+                  <a href="#">사이트맵</a>
+                  <a href="#">ENG</a>
+               </li>
+         </ul> 
+
+         <!-- ========== GNV ========== -->
+         <div class="gnv_wrap">
+            <div class="gnb clearfix"> 
+               <div class="inner">
+                  <button class="btn_gnb">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </button>
+                  <a class="gnb_logo" href="#">
+                     <img src="img/logo_header_corona.png" alt="">
+                  </a>  
+                  <ul class="nav" id="navId">
+                     <li>
+                        <a href="#">행사일정</a>
+                           <ul class="nav__sub onbg">
+                              <li><a href="#">전체일정</a></li>
+                              <li><a href="#">전시일정</a></li>
+                              <li><a href="#">컨벤션일정</a></li>
+                              <li><a href="#">이벤트일정</a></li>
+                              <li><a href="#">공연일정</a></li>
+                              <li><a href="#">해외전시일정</a></li>
+                              <li><a href="#">주최전시 사전등록</a></li>
+                           </ul>
+                     </li>
+                     <li>
+                        <a href="#">이용안내</a>
+                           <ul class="nav__sub onbg">
+                              <li><a href="#">오시는길</a></li>
+                              <li><a href="#">주차안내</a></li>
+                              <li><a href="#">편의시설</a></li>
+                              <li><a href="#">코엑스 360˚VR</a></li>
+                              <li><a href="#">실시간 날씨정보</a></li>
+                           </ul>
+                     </li>
+                     <li>
+                        <a href="#">관광정보</a>
+                           <ul class="nav__sub onbg">
+                              <li><a href="#">숙박안내</a></li>
+                              <li><a href="#">관광안내</a></li>
+                              <li><a href="#">쇼핑안내</a></li>
+                              <li><a href="#">맛집안내</a></li>
+                           </ul>
+                     </li>
+                     <li>
+                        <a href="#">고객센터</a>
+                           <ul class="nav__sub onbg">
+                              <li><a href="#">공지사항</a></li>
+                              <li><a href="#">자주묻는질문</a></li>
+                              <li><a href="#">고객의소리</a></li>
+                              <li><a href="#">고객의 제안</a></li>
+                              <li><a href="#">코엑스 뉴스</a></li>
+                              <li><a href="#">주요연락처</a></li>
+                           </ul>
+                     </li>
+                  </ul>  
+                  <form id="search" action="#" method="POST">
+                     <input type="text">
+                     <button><img src="img/search.png" alt=""></button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="gnb_bg onbg"></div>
+      </header>
+      
+      <!-- ========== QUICK_MENU ========== -->
+      <div class="quick_menu">
+         <button class="btn_arr">&nbsp;</button>
+         <ul>
+            <li><a href="#">
+               <img src="img/quick_visitor01_off.png" alt="">
+               <p>행사일정</p></a></li>
+            <li><a href="#">
+               <img src="img/quick_visitor02_off.png" alt="">
+               <p>오시는길</p></a></li>
+            <li><a href="#"><img src="img/quick_visitor03_off.png" alt="">
+               <p>주차안내</p></a></li>
+            <li><a href="#"><img src="img/quick_visitor04_off.png" alt="">
+               <p>편의시설</p></a></li>
+            <li><a href="#"><img src="img/quick_visitor05_off.png" alt="">
+               <p>코엑스 VR</p></a></li>
+            <li class="btn_top"><button class="top"><span>TOP</span></button></li>
+         </ul>
+      </div>
+
+      <!-- ========== MAIN_VISUAL ========== -->
+      <section class="main_visual">
+         <ul>
+            <li class="main__img img1">
+               <a href="#">
+                  <img src="img/베뉴마케팅팀-신사업-rollingbanner_homepage.jpg" alt="">
+                  <div class="layer">
+                     <div class="inner">
+                        <p>
+                           <span class="ico">Coex</span>
+                           <span class="tit">버추얼·하이브리드 서비스</span>
+                        </p>
+                        <p>2020-11-11 ~</p>
+                     </div>
+                  </div>
+               </a>
+            </li>
+            <li class="main__img img2">
+               <a href="#">
+                  <img src="img/해외전시팀-신사업-홍보-배너-2.png" alt="">
+                  <div class="layer">
+                     <div class="inner">
+                        <p>
+                           <span class="ico">Coex</span>
+                           <span class="tit">온라인+오프라인 융합 하이브리드 해외전시회</span>
+                        </p>
+                        <p>2020-08-14</p>
+                     </div>
+                  </div>
+               </a>
+            </li>
+         </ul>
+
+         <!-- ========== CONTROLS ========== -->
+         <div class="controls">
+            <div class="controls__btn">
+               <a href="" class="prev">PREV</a>
+               <a href="" class="next">NEXT</a>
+            </div>
+         </div>
+      </section>
+
+      <!-- ========== CONTENTS_ROW1 ========== -->
+      <section class="contents_row1">
+         <div class="inner clearfix">
+            <h2>오늘의 주요 일정</h2>
+            <b>2021년 1월</b>
+            <ul class="week">
+               <li><a href="#"><span>
+                  <b>7</b>THU
+               </span></a></li>
+               <li><a href="#"><span>
+                  <b>8</b>FRI
+               </span></a></li>
+               <li><a href="#"><span>
+                  <b>9</b>SAT
+               </span></a></li>
+               <li><a href="#" class="toDay"><span>
+                  <b>10</b>SUN
+               </span></a></li>
+               <li><a href="#"><span>
+                  <b>11</b>MON
+               </span></a></li>
+               <li><a href="#"><span>
+                  <b>12</b>TUE
+               </span></a></li>
+               <li><a href="#"><span>
+                  <b>13</b>WED
+               </span></a></li>
+            </ul>
+            <div class="event">
+               <div class="event_box">
+                  <a href="#">
+                     <div class="area_top">
+                        <p>코엑스전시
+                           <br> 무료관람하고 싶다면 ?
+                        </p>
+                        <h3>참관사전등록</h3>
+                     </div>
+                     <div class="area_bot">
+                        <p class="btn_link">
+                           <span>바로가기</span>
+                        </p>
+                        <p class="img_register">
+                           <img src="img/img_register01.png" alt="">
+                        </p>
+                     </div>
+                  </a>
+               </div>
+               <ul class="event_cate">
+                  <li>
+                     <span class="evn_co">co</span>
+                     <div class="evn_list">
+                        <h3><a href="">제197회 코엑스 웨딩박람회</a></h3>
+                        <p class="event_date">2021-01-09 ~ 2021-01-10</p>
+                        <p class="event_location"><img src="img/i_loc02.png" alt="">코엑스 3층 컨퍼런스룸 307~308호</p>
+                     </div>
+                  </li>
+                  <li>
+                     <span class="evn_co">co</span>
+                     <div class="evn_list">
+                        <h3><a href="">제197회 코엑스 웨딩박람회</a></h3>
+                        <p class="event_date">2021-01-09 ~ 2021-01-10</p>
+                        <p class="event_location"><img src="img/i_loc02.png" alt="">코엑스 3층 컨퍼런스룸 307~308호</p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <a href="#">행사 더 보러가기
+               <img src="img/i_go_link.png" alt="">
+            </a>
+         </div>
+      </section>
+
+      <!-- ========== CONTENTS_ROW2 ========== -->
+      <section class="contents_row2">
+         <div class="inner">
+            <div class="col wrap_board">
+               <div class="board">
+                  <button class="btn-val">공지</button>
+                  <button>입찰</button>
+                  <button>채용</button>
+                  <a class="btn_more" href="#"></a>
+               </div>
+               <ul class="list">
+                  <li><a href="#">· 코엑스 주차장 무인정산시스템으로 전환</a><span>2020-12-23</span></li>
+                  <li><a href="#">· 마스크착용 행정명령 안내</a><span>2020-11-13</span></li>
+                  <li><a href="#">· (주)더블유티씨서울 2020년도 신입직원 채용</a><span>2020-10-19</span></li>
+                  <li><a href="#">· 정부의 사회적 거리두기 완화에 따른 운영 재개 안내</a><span>2020-10-12</span></li>
+                  <li><a href="#">· 2021년도 코엑스 전시장 서비스협력업체 등록 공고</a><span>2020-09-28</span></li>
+               </ul>
+            </div>
+            <div class="col wrap_news">
+               <div class="board">
+                  <button class="btn-val">코엑스 뉴스</button>
+                  <a class="btn_more" href="#"></a>
+               </div>
+               <ul class="list">
+                  <li><a href="#">· 치킨도 로봇이 튀겨요... 코엑스에서 프랜차이즈展</a></li>
+                  <li><a href="#">· [포토] 2020 IFS 프랜차이즈 창업박람회</a></li>
+                  <li><a href="#">· [사진] 붐비는 창업 박람회</a></li>
+                  <li><a href="#">· [현장중계] ‘푸드위크 2020’ 310개사 650 부스 규모 개최···국내외 식품 동향 제시</a></li>
+                  <li><a href="#">· ‘역대급 방역’ IFS프랜차이즈서울, 어떤 아이템 모였나</a></li>
+               </ul>
+            </div>
+            <div class="col wrap_offer">
+               <div class="board">
+                  <a class="list" href="#">
+                     <h2>고객제안</h2> 
+                     <p>고객님들의 참신하고 소중한 의견과 제안을 듣고있습니다.</p>
+                     <img src="img/img_visitor_offer.png" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ========== CONTENTS_ROW3 ========== -->
+      <section class="contents_row3">
+         <div class="inner">
+            <h2>코엑스 SNS</h2>
+            <ul class="sns">
+               <li><a href="#"><img src="img/ico_facebook_off.png" alt=""></a></li>
+               <li><a href="#"><img src="img/ico_blogger_off.png" alt=""></a></li>
+               <li><a href="#"><img src="img/ico_twitter_off.png" alt=""></a></li>
+               <li><a href="#"><img src="img/ico_kakko_off.png" alt=""></a></li>
+               <li><a href="#"><img src="img/ico_insta_off.png" alt=""></a></li>
+               <li><a href="#"><img src="img/ico_youtube_off.png" alt=""></a></li>
+            </ul>
+            <div class="viewport">
+               <ul class="img_list">
+                  <li><a href="#" class="facebook">
+                     <p class="ico_sns"><img src="img/ico_facebook_white.png" alt=""></p>
+                     <img src="img/135852905_3751674374854724_593887513633527496_o.png" alt="">
+                  </a></li>
+                  <li><a href="#" class="insta">
+                     <p class="ico_sns"><img src="img/ico_insta_white.png" alt=""></p>
+                     <img src="img/134343616_3738727596149402_6068285012916617317_n.png" alt="">
+                  </a></li>
+                  <li><a href="#" class="facebook">
+                     <p class="ico_sns"><img src="img/ico_facebook_white.png" alt=""></p>
+                     <img src="img/130928118_3688795124475983_997501801667300740_o.png" alt="">
+                  </a></li>
+                  <li><a href="#" class="blogger">
+                     <p class="ico_sns"><img src="img/ico_blogger_white.png" alt=""></p>
+                     <img src="img/201113_코엑스_긴급-코로나.png" alt="">
+                  </a></li>
+                  <li><a href="#" class="insta">
+                     <p class="ico_sns"><img src="img/ico_insta_white.png" alt=""></p>
+                     <img src="img/134113253_3741464722542356_6167066588836204037_o.jpg" alt="">
+                  </a></li>
+                  <li><a href="#" class="blogger">
+                     <p class="ico_sns"><img src="img/ico_blogger_white.png" alt=""></p>
+                     <img src="img/132553739_3720072971348198_4958686451511398054_o-1.png" alt="">
+                  </a></li>
+               </ul>
+               <!-- ========== CONTROLS ========== -->
+               <div class="controls">
+                  <div class="controls__btn">
+                     <a href="" class="prev">PREV</a>
+                     <a href="" class="next">NEXT</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ========== FOOTER ========== -->
+      <footer class="section">
+         <div class="fot_top">
+            <div class="inner">
+               <ul class="fot_menu">
+                  <li><a href="#">주요연락처</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">이메일무단수집거부</a></li>
+                  <li><a href="#">무역센터 신문고</a></li>
+               </ul>
+               <dl class="family_site">
+                  <dt><button onclick="showHide('siteList');">Family Site</button></dt>
+                  <dd id="siteList">
+                     <ul>
+                        <li><a href="#">창원컨벤션센터</a></li>
+                        <li><a href="#">CoexMall</a></li>
+                        <li><a href="#">KITA</a></li>
+                        <li><a href="#">WTC Seoul</a></li>
+                        <li><a href="#">KTNET</a></li>
+                        <li><a href="#">CALT</a></li>
+                        <li><a href="#">CAAM</a></li>
+                     </ul>
+                  </dd>
+               </dl>
+               
+            </div>
+         </div>
+         <div class="footer_info">
+            <div class="inner">
+               <img src="img/logo_footer.png" alt="">
+               <div class="wrap_address">
+                  <address>
+                     서울특별시 강남구 영동대로 513 (삼성동, 코엑스) 06164 <span>|</span>문의전화 : 02-6000-0114
+                  </address>
+                  <p class="copy">COPYRIGHT 2015 COEX.ALL RIGHTS RESERVED.</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+
+<script>
+
+   function mover(){
+      const imgs = document.getElementById("imageID").src="img/organizer_ov.png";
+   }
+
+   function mout(){
+      const imgs = document.getElementById("imageID").src="img/organizer_off.png";
+   }
+
+   
+
+</script>
+
+</html>
+

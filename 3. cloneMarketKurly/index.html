@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
+
+    <!-- css 초기화 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- 반응형 -->
+    <link rel="stylesheet" media="all and (max-width: 1024px)" href="css/main_medium.css">
+
+    <script defer src="main.js"></script>
+
+</head>
+
+<body>
+    <header class="section">
+        <div class="bnr_header">
+            <a href="#">
+                <div class="inner">
+                    <span class="bnr_title">지금 가입하고 인기상품 <strong class="strong">100원</strong>에 받아가세요! </span>
+                    <span class="next"></span>
+                    <button class="bnr_btn">
+                        <span class="next">next</span>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div class="inner">
+            <nav class="nav">
+                <a href=""><img src="https://res.kurly.com/pc/service/common/1908/delivery_190819.gif" alt=""></a>
+                <ul class="user-menu">
+                    <li><a href="#" class="link-menu menu-join">회원가입</a></li>
+                    <li><a href="#" class="link-menu">로그인</a></li>
+                    <li><a href="#" id="center" class="menu-center mouseOver">고객센터</a>
+                        <ul id="center-pop" class="menu__sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                            <li><a href="#">상품 제안</a></li>
+                            <li><a href="#">에코포장 피드백</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo"><img src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt=""></div>
+        </div>
+        <div class="gnb-menu">
+            <div class="inner">
+                <div class="gnb--left">
+                    <button class="gnb-btn">
+                        <span class="ico"></span>
+                        <span class="ico"></span>
+                        <span class="ico"></span>
+                    </button>
+                    <ul class="gnb__list">
+                        <li><a href="#"><span id="menuAll" class="mouseOver" >전체 카테고리</span></a></li>
+                        <li><a href="#"><span>신상품</span></a></li>
+                        <li><a href="#"><span>베스트</span></a></li>
+                        <li><a href="#"><span>알뜰쇼핑</span></a></li>
+                        <li><a href="#"><span>금주혜택</span></a></li>
+                    </ul>
+                </div>
+                <div class="gnb--right">
+                    <div class="side_search">
+                        <from id="search">
+                            <input type="text">
+                            <button type="reset" class="res-btn"></button>
+                            <button class="sear-btn"><img
+                                    src="https://res.kurly.com/pc/service/common/1908/ico_search_x2.png"
+                                    alt=""></button>
+                        </from>
+                    </div>
+                    <button id="location" class="location-btn mouseOver"></button>
+                    <a href="#" class="cart_btn"></a>
+                </div>
+
+                <!-- GNB_SUB -->
+                <div id="gnb-pop" class="gnb__sub">
+                    <ul class="sub-menu">
+                        <li>
+                            <img src="img/icon_newyear_inactive_pc_2x.1609722514.png" alt="">
+                            <a href="">2021 설 선물세트</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_veggies_inactive_pc_2x.1586324570.png" alt="">
+                            <a href="">채소</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_fruit_inactive_pc_2x.1568684150.png" alt="">
+                            <a href="">과일 · 견과 · 쌀</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_seafood_inactive_pc_2x.1568684352.png" alt="">
+                            <a href="">수산 · 해산 · 건어물</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_meat_inactive_pc_2x.1568684452.png" alt="">
+                            <a href="">정육 · 계란</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_side_inactive_pc_2x.1572243579.png" alt="">
+                            <a href="">국 · 반찬 · 메인요리</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_convenient_inactive_pc_2x.1572243542.png" alt="">
+                            <a href="">샐러드 · 간편식</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_sauce_inactive_pc_2x.1572243594.png" alt="">
+                            <a href="">면 · 양념 · 오일</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_snacks_inactive_pc_2x.1572243615.png" alt="">
+                            <a href="">생수 · 음료 · 우유 · 커피</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_cookie_inactive_pc.1610074008.png" alt="">
+                            <a href="">간식 · 과자 · 떡</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_deli_inactive_pc_2x.1568687352.png" alt="">
+                            <a href="">베이커리 · 치즈 · 델리</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_health_inactive_pc_2x.1574645922.png" alt="">
+                            <a href="">건강식품</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_living_inactive_pc_2x.1588814089.png" alt="">
+                            <a href="">생활용품 · 리빙</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_beauty_inactive_pc_2x.1588750188.png" alt="">
+                            <a href="">뷰티 · 바디케어</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_kitchen_inactive_pc_2x.1574646457.png" alt="">
+                            <a href="">주방용품</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_electronic__inactive_pc_2x.1574417978.png" alt="">
+                            <a href="">가전제품</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_kids_inactive_pc_2x.1568687537.png" alt="">
+                            <a href="">베이비 · 키즈</a>
+                        </li>
+                        <li>
+                            <img src="img/icon_pet_inactive_pc_2x.1587442293.png" alt="">
+                            <a href="">반려동물</a>
+                        </li>
+                        <li>
+                            <img src="img/ico_recommend_v2.jpg" alt="">
+                            <a href="">컬리의 추천</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- SUB-MENU__IN -->
+                <ul id="sub-menu__in">
+                    <li><a href="">- - 카테고리별 - -</a></li>
+                    <li><a href="">홍삼 · 즙 · 건강식품</a></li>
+                    <li><a href="">정육 · 가공육 · 건육</a></li>
+                    <li><a href="">수산 · 건어물 · 젓갈</a></li>
+                    <li><a href="">과일 · 견과 · 곡류</a></li>
+                    <li><a href="">디저트 · 한과 · 차 · 커피</a></li>
+                    <li><a href="">면 · 양념 · 오일 · 캔류</a></li>
+                    <li><a href="">생활 · 주망 · 뷰티</a></li>
+                    <li><a href="">- - - 가격대별 - - -</a></li>
+                    <li><a href="">20만원 이상</a></li>
+                    <li><a href="">10-20만원</a></li>
+                    <li><a href="">5-10만원</a></li>
+                </ul>
+                <!-- LOCATION-SUB -->
+                <div id='loc-pop' class="location-pop">
+                    <div class="triangle-up"></div>
+                    <div class="location-sub">
+                        <p><b>배송지를 등록</b>하고</br>
+                        구매 가능한 상품을 확인하세요!</p>
+                        <div class="location_btn mouseOver">
+                            <a href="#" class="login"><span>로그인</span></a>
+                            <a href="#" class="addr">
+                                <!-- <span class="glass"></span> -->
+                                <span>주소검색</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN_VISUA -->
+    <section class="main-visua">
+        <div class="main__img">
+            <div class="inner">
+                <div class="main__btn">
+                    <a href="#" class="title">
+                        <span class="main-title">가입하고 혜택 받기</span>
+                        <span class="next">next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-bottom">
+            <div class="inner">
+                <ul class="bottom__btn">
+                    <li><a href="#">Welcome Gift</a></li> 
+                    <li class="btn-line"><a href="#">첫 구매 무료 배송</a></li> 
+                    <li><a href="#">한달동안 5% 적립</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENTS_ROW -->
+    <section class="contents_row row">
+        <div class="inner">
+            <div class="con-title">
+                <span>혜택</span>
+                <div class="box">
+                    <p>01</p>
+                </div>
+            </div>
+            <h1>Welcome Gift</h1>
+            <p class="jonin-title">회원 가입 시, 아래 상품 중 <br>
+            원하는 상품을 <strong class="strong">100원부터</strong> 구입할 수 있습니다.</p>
+            <div class="con-content">
+                <p>※ 신규회원 이벤트 상품 구매 유의 사항</p>
+                <ul>
+                    <li><span>· 가입 후 3일 이내, 이벤트 상품 외 1만원 이상 주문 시 구매 가능합니다.</span></li>
+                    <li><span>· 이벤트 상품은 조기 품절될 수 있으며, 품절 시 이벤트에서 제외됩니다.</span></li>
+                </ul>
+            </div>
+            <div class="con-list">
+                <div class="list-title">
+                    <hr>
+                    <div class="main__btn">
+                        <a href="#" class="title">
+                            <span class="main-title">선택 옵션 : 아래 상품 중 택 1</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul class="shopping-list">
+                <li>
+                    <a href="#">
+                        <img src="https://res.kurly.com/images/event/join/210113/pc/img_goods1.jpg" alt="">
+                        <span class="sale-ico">취소선</span>
+                        <span class="sale-price">1,000원</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://res.kurly.com/images/event/join/210113/pc/img_goods2.jpg" alt="">
+                        <span class="sale-ico">취소선</span>
+                        <span class="sale-price">1,000원</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://res.kurly.com/images/event/join/210113/pc/img_goods3.jpg" alt="">
+                        <span class="sale-ico">취소선</span>
+                        <span class="sale-price">100원</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="shopping-list">
+                <li>
+                    <a href="#">
+                        <img src="https://res.kurly.com/images/event/join/210113/pc/img_goods4.jpg" alt="">
+                        <span class="sale-ico">취소선</span>
+                        <span class="sale-price">1,000원</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://res.kurly.com/images/event/join/210113/pc/img_goods5.jpg" alt="">
+                        <span class="sale-ico">취소선</span>
+                        <span class="sale-price">100원</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://res.kurly.com/images/event/join/210113/pc/img_goods6.jpg" alt="">
+                        <span class="sale-ico">취소선</span>
+                        <span class="sale-price">1,000원</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="jonin-title warning">· 부정한 방법으로(중복가입 또는 중복참여, 명의 도용 등)으로 신규 가입 이벤트를 이용할 경우, 주문 완료 후에도 주문이 취소될 수 있습니다.</p>
+        </div>
+    </section>
+
+    <!-- CONTENTS_ROW2 -->
+    <section class="contents_row2 row">
+        <div class="inner">
+            <div class="con-title">
+                <span>혜택</span>
+                <div class="box">
+                    <p>02</p>
+                </div>
+            </div>
+            <h1>하나만 사도 <strong class="strong">무료 배송!</strong></h1>
+            <p class="jonin-title"> <strong class="strong">회원 가입 후 첫 구매 시,</strong> 어떤 상품을 사도 <strong class="strong">무료배송 혜택</strong>을 드립니다.<br>
+            배송비 부담 없이 마켓컬리를 경험해 보세요!</p>
+            <img src="img/img_benefit3.png" alt="">
+            <p class="jonin-title warning">· ID당 1회 무료 배송 혜택 적용</p>
+        </div>
+    </section>
+
+    <!-- CONTENTS_ROW3 -->
+    <section class="contents_row3 row">
+        <div class="inner">
+            <div class="con-title">
+                <span>혜택</span>
+                <div class="box">
+                    <p>03</p>
+                </div>
+            </div>
+            <h1>한 달 동안 <strong class="strong">5%</strong>적립 + 무료배송!</h1>
+            <p class="jonin-title"> 첫 주문 후 한 달 동안<br> <strong class="strong">결제 금액의 5% 적립금</strong>과 <strong class="strong">무제한 무료배송 혜택</strong>을 드립니다.</p>
+            <div class="con-img">
+            	<img src="img/img_benefit3_v2.png" alt=""><img src="img/img_benefit3_v2.png" alt="">
+            </div>
+            <p class="jonin-title warning">· 혜택은 첫 주문 다음날 오전 일괄 적용됩니다.<br>
+                · 혜택은 시작일로부터 30일간 적용됩니다.<br>
+                · 무료배송 혜택은 2만원 이상 주문 시 적용됩니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTENTS_ROW4 -->
+    <section class="contents_row4 row">
+        <div class="inner">
+            <div class="con-title">
+                <span>혜택</span>
+                <div class="box">
+                    <p>04</p>
+                </div>
+            </div>
+            <h1>친구 초대하면 <strong class="strong">적립금 5천원!</strong></h1>
+            <p class="jonin-title"> 친구가 여러분의 ID를 추천인으로 적고 친구가 가입 후 첫주문 완료시,<br> 
+                <strong class="strong">친구와 나의 계정으로 각각 5,000원</strong>의 적립금을 드립니다.</p>
+            <img src="img/img_benefit3_v2.png" alt=""> 
+            <p class="jonin-title warning">· 적립금은 친구의 첫 배송 완료 후 영업일 기준 2일 이내 일괄 지급
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
